@@ -1,0 +1,326 @@
+*{
+    body {
+        margin: 0;
+        background-color: #8F76BC;
+    }
+    a {
+        color: #27b9c2;
+        font-family: var(--font-Open-Sans);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    i {
+        color: #FFC80A;
+        padding-right: 5px;
+    }
+    p {
+        font-family: var(--font-Arvo);
+        font-size: 22px;
+    }
+    span {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #9fa3a7;
+    }
+}
+:root {
+    --font-Montserrat: "Montserrat", sans-serif;
+    --font-Open-Sans: "Open Sans", sans-serif;
+    --font-Arvo: "Arvo", serif;
+}
+div {
+    height: 55vh;
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-areas: 
+        'iphone iphone'
+        'how-to how-to'
+        'keyboard games'
+        'imac imac'
+        'twitter icloud'
+        'muchbetter icloud'
+        'mach mach'
+        'display display'
+    ;
+}
+
+.child-1 {
+    background-color: #ffffff;
+    grid-area: iphone;
+    display: flex;
+    justify-content: space-around;
+}
+.child-1 .text-left {
+    padding: 60px;
+}
+.child-1 .text-left p {
+    font-size: 22px;
+    line-height: 32px;
+}
+.child-1 .text-left .p-bottom p {
+    color: #9fa3a7;
+    font-size: 14px;
+}
+.child-1 .inner {
+    margin-right: 60px ;
+}
+.child-1 .p-bottom p {
+    line-height: 26px;
+}
+.child-1 .inner img{
+   width: 250px;
+   padding: 60px 60px 0 0 ;
+}
+/* end-child-1 */
+.child-2 {
+    background-color: #F7F8F9;
+    grid-area: how-to;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.child-2 {
+    text-align: center;
+}
+.child-2 p {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px;
+}
+.child-2 a {
+    letter-spacing: normal;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* end-child-2 */
+.child-3 {
+    background-color: #F05638;
+    grid-area: keyboard;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.child-3 .text p {
+    font-family: var(--font-Arvo);
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.child-3 .text a {
+    color: #ffc80a;
+}
+.child-3 img {
+    width: 300px;
+    margin-top: 60px;
+}
+/* end-child-3 */
+.child-4 {
+    background-color: #ffffff;
+    grid-area: imac;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.child-4 .cont-left {
+    margin: 50px 0 0 60px;
+    position: relative;
+    margin-right: 60px;
+}
+.child-4 .cont-left img {
+    width: 450px;
+    position: absolute;
+    right: 5px;
+    bottom: 50px;
+}
+.child-4 .text-right {
+    margin-top: 60px;
+}
+.child-4 .text-right p {
+    font-family: var(--font-Open-Sans);
+    font-size: 14px;
+    font-weight: 400;
+    color: #9fa3a7;
+    line-height: 26px;
+}
+/* end-child-4 */
+.child-5 {
+    background-color: #8F76BC;
+    grid-area: icloud;
+}
+.child-5 .card .inner {
+    width: 350px;
+    height: 350px;
+    background-color: #8166B0;
+    border-radius: 50%;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child-5 .card .inner img {
+    width: 230px;
+}
+.child-5 .card .inner span {
+    color: #FFFFFF;
+    font-size: 10px;
+    background-color: #8B72B6;
+    padding: 7px 18px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.child-5 .card .inner p {
+    font-family: var(--font-Montserrat);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 0;
+    color: #FFFFFF;
+}
+.child-5 .card .inner i {
+    color: #FFC80A;
+}
+.child-5 .card-bottom {
+    text-align: center;
+    padding: 0 20px;
+}
+.child-5 .card-bottom h3 {
+    font-family: var(--font-Arvo);
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.child-5 .card-bottom p {
+    font-family: var(--font-Open-Sans);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.child-5 .card-bottom button {
+    background-color: #FFC80A;
+    font-family: var(--font-Open-Sans);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    margin: 10px 0 0 0;     
+}
+/* end-child-5 */
+.child-6 {
+    background-color: #FFFFFF;
+    grid-area: games;
+}
+.child-6 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.child-6 .card img {
+    width: 250px;
+    margin-right: 50px;
+}
+/* end-child-6 */
+.child-7 {
+    background-color: #93B6B7;
+    grid-area: muchbetter;
+    background-image: url(Image-masterclass/imgi_13_5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-size: 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.child-7 span {
+    background-color: #FA684F;
+    color: #FFFFFF;
+    padding: 5px;
+}
+.child-7 p {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.child-7 .cont-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+.child-7 img {
+    width: 700px;
+    position: absolute;
+    top: 130px;
+    right: 100px;
+}
+/* end-child-7 */
+.child-8 {
+    background-color: #38D5F4;
+    grid-area: twitter;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.child-8 .bg-content {
+    height: 300px;
+    width: 300px;
+    background-color: #35CFED;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.child-8 .bg-content img {
+    width: 50px;
+}
+/* end-child-8 */
+.child-9 {
+    background-color: #FFFFFF;
+    grid-area: mach;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.child-9 span {
+    background-color: #7BC424;
+    color: #FFFFFF;
+    font-size: 8px;
+    padding: 5px 8px;
+    border-radius: 25px;
+}
+/* end-child-9 */
+.child-01 {
+    background-color: #2C2C2C;
+    grid-area: display;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+.child-01 img {
+    width: 50%;
+}
+.child-01 p {
+    /* margin-right: 60px; */
+}
+/* end-child-01 */

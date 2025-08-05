@@ -1,0 +1,35 @@
+/* Media query breakpoints : */
+
+
+
+/* sm 576px ->  */
+@media screen and (min-width:576px) {
+    .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'iphone iphone how-to how-to'
+        'keyboard imac imac icloud'
+        'games muchbetter muchbetter icloud'
+        'twitter mach display display'
+    ;
+}
+}
+
+/* md 768px -> */
+@media screen and (min-width:768px) {
+
+}
+/* lg 992px -> */
+@media screen and (min-width:992px) {
+
+}
+/* xl 1200px -> */
+@media screen and (min-width:1200px) {
+
+}
+/* xxl 1400px -> */
+@media screen and (min-width:1400px) {
+    
+}
